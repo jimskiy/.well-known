@@ -1,5 +1,32 @@
-VERSION="2.1.0"
-NETWORK_PASSPHRASE="Test SDF Network ; September 2015"
+ACCOUNTS = [ "GB4EXFCWXLXOGRZNXJCDS4PCQGEIMNIULYUSHWAHSTAFCJMH3S5WKZSU", "GBDCQLFWWXBJO666PNFJOFQNHSD5RDI7CA5VPNNTHCWA52J5ZHJ5MOVD" ]
+VERSION = "0.1.0"GB4EXFCWXLXOGRZNXJCDS4PCQGEIMNIULYUSHWAHSTAFCJMH3S5WKZSU
+SIGNING_KEY = "GB4EXFCWXLXOGRZNXJCDS4PCQGEIMNIULYUSHWAHSTAFCJMH3S5WKZSU"
+NETWORK_PASSPHRASE = "Test SDF Network ; September 2015"
 
-ACCOUNTS=["GAKK55UJBMQ5IVCKHLUKVMIWCHBK5KS5XBH4FCARSCDPPUZDGM4WTDMG"]
-SQ02_EASTER_EGG="Log into series 2 of Stellar Quest then visit quest.stellar.org/series2. Finally drag and drop your Stellar Quest series 2 badge PNG images onto the screen. Enjoy!"
+TRANSFER_SERVER = "https://testanchor.stellar.org/sep6"
+TRANSFER_SERVER_SEP0024 = "https://testanchor.stellar.org/sep24"
+WEB_AUTH_ENDPOINT = "https://testanchor.stellar.org/auth"
+KYC_SERVER = "https://testanchor.stellar.org/kyc"
+DIRECT_PAYMENT_SERVER = "https://testanchor.stellar.org/sep31"
+
+[[CURRENCIES]]
+code = "SRT"
+issuer = "GB4EXFCWXLXOGRZNXJCDS4PCQGEIMNIULYUSHWAHSTAFCJMH3S5WKZSU"
+status = "test"
+is_asset_anchored = false
+anchor_asset_type = "other"
+desc = "A fake anchored asset to use with this example anchor server."
+
+[[PRINCIPALS]]
+name = "Jacob Urban"
+email = "jake@stellar.org"
+keybase = "jakeurban"
+github = "https://www.github.com/JakeUrban"
+
+[DOCUMENTATION]
+ORG_NAME = "Stellar Development Foundation"
+ORG_URL = "https://stellar.org"
+ORG_DESCRIPTION = "SEP 24 reference server."
+ORG_KEYBASE = "stellar.public"
+ORG_TWITTER = "StellarOrg"
+ORG_GITHUB = "stellar"
